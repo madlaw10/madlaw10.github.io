@@ -10,6 +10,10 @@ html {
 	color: khaki
 }
 
+main {
+	display: flex;
+}
+
 .container {
 	margin: 0 auto;
 	width: 1000px;
