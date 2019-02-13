@@ -1,0 +1,16 @@
+* {
+	box-sizing:border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font:16px/1.618 sans-serif;
+	background-color: darkgreen;
+	color: khaki
+}
+
+.container {
+	margin: 0 auto;
+	width: 1000px;
+}
