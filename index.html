@@ -1,102 +1,116 @@
 <!--comments-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<link rel="icon" type="image/png" href="/images/favicon.ico">
 	<link rel="stylesheet" href="style.css">
-	<link rel="layoutsheet" href="layout.css">
+	<link rel="stylesheet" href="layout.css">
+	<link rel="icon" type="image/png" href="/images/favicon.ico">
 	<title>Madison Lawton</title>
 </head>
 
 <body>
-	<div id="container">
-		<header>
-			<h1 id="page-title">Madison Lawton</h1>
-			<nav>
-				• <a href="#about-me">About Me</a> • <a href="#projects">Projects</a> • <a href="#contact-info">Contact</a> •
-			</nav>
-		</header>
+	<header class="main-header">
+		<h1 class="main-header__title">Madison Lawton</h1>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__list-item"><a href="#about-me">About Me</a></li>
+				<li class="nav__list-item"><a href="#projects">Projects</a></li>
+				<li class="nav__list-item"><a href="#contact-info">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-		<main>
-			<section>
-				<!---professional photo goes here-->
-				<img src="images/my_photo.jpg" alt="Madison Lawton at the Grand Canyon.">
-				<img src="images/cats-photo.jpg" alt="Two black cats on a red kitchen stool.">
-				<img src="images/partner-photo.jpg" alt="Billy and Madison Lawton.">
-				
-					<h3>About Me</h3>
-					<p>
-						I am a junior software developer (in-training) living in Columbus, OH. 
-					</p>
-				
-					<h3>Tech Stack</h3>
-					<p>
-						• Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile (Scrum) • 
-						Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile • 
-						Structured Query Language (SQL) • Relational Databases • Source Control / Git •
-					</p>
-				
-			</section>	
+	<main>
+		<section>
+			<div class="container image-grid">
+				<div class="image-grid__main-column">
+					<!---professional photo goes here-->
+					<img class="image-grid__main-column-image" src="images/my_photo.jpg" alt="Madison Lawton at the Grand Canyon." style="width:100%">
+				</div>
+				<div class="image-grid_accent-column">
+					<img class="image-grid__accent-column-image" src="images/my_photo.jpg" alt="Madison Lawton at the Grand Canyon." style="width:100%">
+					<img class="image-grid__accent-column-image" src="images/cats-photo.jpg" alt="Two black cats on a red kitchen stool." style="width:100%"> 
+					<img class="image-grid__accent-column-image" src="images/partner-photo.jpg" alt="Madison and Billy Lawton." style="width:100%">
+				</div> <!--accent image column-->
+			</div> <!--main image-->
+			<h3>About Me</h3>
+			<p>
+				I am a junior software developer (in-training) living in Columbus, OH.
+			</p>
 
+			<h3>Tech Stack</h3>
+			<p>
+				• Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile
+				(Scrum) •
+				Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
+				Structured Query Language (SQL) • Relational Databases • Source Control / Git •
+			</p>
+		</section>
+
+		<section>
+			<h2 id="projects">Projects</h2>
+			<div class="project-container">
+				<div class="grid-layout grid-layout-square">
+					<img src="" alt="Portfolio Website">
+					<article>
+						<h3>Portfolio Website</h3>
+						<p>Screenshot</p>
+						<p>Summary</p>
+						<p>• HTML5 • CSS3 • Flexbox • Grid •</p>
+					</article>
+					<img src="" alt="Hospital Management">
+					<article>
+						<h3>Hospital Management</h3>
+						<p>
+							Solo project to showcase the skills mastered in the first four weeks of
+							the bootcamp. There was a heavy emphasis on OOP and, by extension, APIE to
+							design a mock hospital management system. When compared to my first solo
+							project, Smart Garage, this code shows my growth and confidence as a developer
+							in just a few weeks.
+						</p>
+						<p>• Java • TDD • OOP & APIE • Git •</p>
+					</article>
+					<img src="" alt="Virtual Pet Shelter">
+					<article>
+						<h3>Virtual Pet Shelter</h3>
+						<p>
+							Used the principles of agile development to create a virtual pet shelter game
+							(think Tamagotchi) with a team of fellow junior developers. The three-week long
+							project was divided into multiple three-day sprints, with designated time for
+							sprint retrospection and planning sessions. The team environment also required
+							purposeful feature-branching and version control with GitHub.
+						</p>
+						<p>• Agile • Git • Java • TDD • OOP •</p>
+					</article>
+					<img src="" alt="Smart Garage">
+					<article>
+						<h3>Smart Garage</h3>
+						<p>
+							First solo project utilizing basic object oriented programing skills.
+							Used test driven development to build out multiple classes for various
+							car types, provided each class with unique methods, and created a garage
+							class to house all car objects. Wrote a console application to interact
+							with the various classes, both individually and in groups.
+						</p>
+						<p>• Java • TDD • OOP •</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<footer id="contact-info">
 			<section>
-				<h2 id="projects">Projects</h2>
-				<article>
-					<h3>Portfolio Website</h3>
-					<p>Screenshot</p>
-					<p>Summary</p>
-					<p>• HTML5 • CSS3 • Flexbox • Grid •</p>
-				</article>
-				<article>
-					<h3>Hospital Management</h3>
-					<p>Screenshot</p>
-					<p>
-						Solo project to showcase the skills mastered in the first four weeks of 
-						the bootcamp. There was a heavy emphasis on OOP and, by extension, APIE to 
-						design a mock hospital management system. When compared to my first solo 
-						project, Smart Garage, this code shows my growth and confidence as a developer 
-						in just a few weeks. 
-					</p>
-					<p>• Java • TDD • OOP & APIE • Git •</p>
-				</article>
-				<article>
-					<h3>Virtual Pet Shelter</h3>
-					<p>Screenshot</p>
-					<p>
-						Used the principles of agile development to create a virtual pet shelter game 
-						(think Tamagotchi) with a team of fellow junior developers. The three-week long
-						project was divided into multiple three-day sprints, with designated time for 
-						sprint retrospection and planning sessions. The team environment also required 
-						purposeful feature-branching and version control with GitHub.
-					</p>
-					<p>• Agile • Git • Java • TDD • OOP •</p>
-				</article>
-				<article>
-					<h3>Smart Garage</h3>
-					<p>Screenshot</p>
-					<p>
-						First solo project utilizing basic object oriented programing skills. 
-						Used test driven development to build out multiple classes for various 
-						car types, provided each class with unique methods, and created a garage 
-						class to house all car objects. Wrote a console application to interact 
-						with the various classes, both individually and in groups.
-					</p>
-					<p>• Java • TDD • OOP •</p>
-				</article>
+				<p>614.668.5843</p>
+				<p>madison.e.lawton@gmail.com</p>
+				<p>1518 Kenny Road, Apt 8, Columbus, OH 43212</p>
 			</section>
-
-			<footer>
-				<div id="contact-info">
-					<p>614.668.5843</p>
-					<p>madison.e.lawton@gmail.com</p>
-					<p>1518 Kenny Road, Apt 8, Columbus, OH 43212</p>
-				</div>
-				<div id="professional-links">
-					<a>GitHub</a>
-					<a>LinkedIn</a>
-				</div>
-			</footer>
-		</main>
-	</div> <!--close .container-->
+			<section>
+				<a>GitHub</a>
+				<a>LinkedIn</a>
+			</section>
+		</footer>
+	</main>
 </body>
-</html>
 
+</html>
