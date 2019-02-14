@@ -1,58 +1,102 @@
+<!--comments-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<link rel="icon" type="image/png" href="/images/favicon.ico">
-	<link rel ="stylesheet" href="index.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="layoutsheet" href="layout.css">
 	<title>Madison Lawton</title>
 </head>
 
 <body>
-	<div class ="container">
+	<div id="container">
 		<header>
-			<h1>Madison Lawton</h1>
+			<h1 id="page-title">Madison Lawton</h1>
 			<nav>
-				<a href="#about-me">About Me</a> | <a href="#projects">Projects</a> |
+				• <a href="#about-me">About Me</a> • <a href="#projects">Projects</a> • <a href="#contact-info">Contact</a> •
 			</nav>
 		</header>
 
 		<main>
 			<section>
-				<h2 id="about-me">About Me</h2>
-				<img src="/images/my_photo.jpg" alt="A picture of Madison Lawton at the Grand Canyon.">
-				<p>Brief Biographical Information</p>
-				<p>Contact Information</p>
-				<p>Links to Professional Networking Sites</p>
-				<p>List of Skills</p>
-			</section>
+				<!---professional photo goes here-->
+				<img src="images/my_photo.jpg" alt="Madison Lawton at the Grand Canyon.">
+				<img src="images/cats-photo.jpg" alt="Two black cats on a red kitchen stool.">
+				<img src="images/partner-photo.jpg" alt="Billy and Madison Lawton.">
+				
+					<h3>About Me</h3>
+					<p>
+						I am a junior software developer (in-training) living in Columbus, OH. 
+					</p>
+				
+					<h3>Tech Stack</h3>
+					<p>
+						• Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile (Scrum) • 
+						Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile • 
+						Structured Query Language (SQL) • Relational Databases • Source Control / Git •
+					</p>
+				
+			</section>	
 
 			<section>
 				<h2 id="projects">Projects</h2>
 				<article>
-					<p>Hospital Management</p>
-					<p>Summary</p>
+					<h3>Portfolio Website</h3>
 					<p>Screenshot</p>
-					<p>Skills/Technologies Used</p>
+					<p>Summary</p>
+					<p>• HTML5 • CSS3 • Flexbox • Grid •</p>
 				</article>
 				<article>
-					<p>Pet Shop Game</p>
-					<p>Summary</p>
+					<h3>Hospital Management</h3>
 					<p>Screenshot</p>
-					<p>Skills/Technologies Used</p>
+					<p>
+						Solo project to showcase the skills mastered in the first four weeks of 
+						the bootcamp. There was a heavy emphasis on OOP and, by extension, APIE to 
+						design a mock hospital management system. When compared to my first solo 
+						project, Smart Garage, this code shows my growth and confidence as a developer 
+						in just a few weeks. 
+					</p>
+					<p>• Java • TDD • OOP & APIE • Git •</p>
 				</article>
 				<article>
-					<p>Smart Garage</p>
-					<p>Summary</p>
+					<h3>Virtual Pet Shelter</h3>
 					<p>Screenshot</p>
-					<p>Skills/Technologies Used</p>
+					<p>
+						Used the principles of agile development to create a virtual pet shelter game 
+						(think Tamagotchi) with a team of fellow junior developers. The three-week long
+						project was divided into multiple three-day sprints, with designated time for 
+						sprint retrospection and planning sessions. The team environment also required 
+						purposeful feature-branching and version control with GitHub.
+					</p>
+					<p>• Agile • Git • Java • TDD • OOP •</p>
+				</article>
+				<article>
+					<h3>Smart Garage</h3>
+					<p>Screenshot</p>
+					<p>
+						First solo project utilizing basic object oriented programing skills. 
+						Used test driven development to build out multiple classes for various 
+						car types, provided each class with unique methods, and created a garage 
+						class to house all car objects. Wrote a console application to interact 
+						with the various classes, both individually and in groups.
+					</p>
+					<p>• Java • TDD • OOP •</p>
 				</article>
 			</section>
 
 			<footer>
-				<!--Need an "appropriate" footer tag element-->
+				<div id="contact-info">
+					<p>614.668.5843</p>
+					<p>madison.e.lawton@gmail.com</p>
+					<p>1518 Kenny Road, Apt 8, Columbus, OH 43212</p>
+				</div>
+				<div id="professional-links">
+					<a>GitHub</a>
+					<a>LinkedIn</a>
+				</div>
 			</footer>
 		</main>
-	</div> <!--closing the container-->
+	</div> <!--close .container-->
 </body>
 </html>
-<!--it's helpful to add comments with closings-->
 

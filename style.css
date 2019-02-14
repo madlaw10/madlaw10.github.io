@@ -1,0 +1,17 @@
+/*comments*/
+
+html {
+	background-color: #e4d6a7;
+	font:16px/1.618 Helvetica, Arial, sans-serif; 
+	color: #211a1d;
+}
+
+article {
+	background-color: #7a9b76;
+	border-color: #c6dea6;
+}
+
+footer {
+	background-color: #211a1d;
+	color:#f3e9dc;
+}
