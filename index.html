@@ -4,36 +4,15 @@
 
 <head>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="layout.css">
-	<link rel="icon" type="image/png" href="/images/favicon.ico">
+	<link rel="icon" type="image/png" href="images/favicon.ico">
 	<title>Madison Lawton</title>
 </head>
 
-<body>
-	<header class="main-header">
-		<h1 class="main-header__title">Madison Lawton</h1>
-		<nav class="nav">
-			<ul class="nav__list">
-				<li class="nav__list-item"><a href="#about-me">About Me</a></li>
-				<li class="nav__list-item"><a href="#projects">Projects</a></li>
-				<li class="nav__list-item"><a href="#contact-info">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+</html>
 
+<body>
 	<main>
 		<section>
-			<div class="container image-grid">
-				<div class="image-grid__main-column">
-					<!---professional photo goes here-->
-					<img class="image-grid__main-column-image" src="images/my_photo.jpg" alt="Madison Lawton at the Grand Canyon." style="width:100%">
-				</div>
-				<div class="image-grid_accent-column">
-					<img class="image-grid__accent-column-image" src="images/my_photo.jpg" alt="Madison Lawton at the Grand Canyon." style="width:100%">
-					<img class="image-grid__accent-column-image" src="images/cats-photo.jpg" alt="Two black cats on a red kitchen stool." style="width:100%"> 
-					<img class="image-grid__accent-column-image" src="images/partner-photo.jpg" alt="Madison and Billy Lawton." style="width:100%">
-				</div> <!--accent image column-->
-			</div> <!--main image-->
 			<h3>About Me</h3>
 			<p>
 				I am a junior software developer (in-training) living in Columbus, OH.
@@ -41,76 +20,84 @@
 
 			<h3>Tech Stack</h3>
 			<p>
-				• Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile
-				(Scrum) •
-				Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
-				Structured Query Language (SQL) • Relational Databases • Source Control / Git •
+				Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile
+				(Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
+				Structured Query Language (SQL) • Relational Databases • Source Control / Git
 			</p>
 		</section>
-
-		<section>
-			<h2 id="projects">Projects</h2>
-			<div class="project-container">
-				<div class="grid-layout grid-layout-square">
-					<img src="" alt="Portfolio Website">
-					<article>
-						<h3>Portfolio Website</h3>
-						<p>Screenshot</p>
-						<p>Summary</p>
-						<p>• HTML5 • CSS3 • Flexbox • Grid •</p>
-					</article>
-					<img src="" alt="Hospital Management">
-					<article>
-						<h3>Hospital Management</h3>
-						<p>
-							Solo project to showcase the skills mastered in the first four weeks of
-							the bootcamp. There was a heavy emphasis on OOP and, by extension, APIE to
-							design a mock hospital management system. When compared to my first solo
-							project, Smart Garage, this code shows my growth and confidence as a developer
-							in just a few weeks.
-						</p>
-						<p>• Java • TDD • OOP & APIE • Git •</p>
-					</article>
-					<img src="" alt="Virtual Pet Shelter">
-					<article>
-						<h3>Virtual Pet Shelter</h3>
-						<p>
-							Used the principles of agile development to create a virtual pet shelter game
-							(think Tamagotchi) with a team of fellow junior developers. The three-week long
-							project was divided into multiple three-day sprints, with designated time for
-							sprint retrospection and planning sessions. The team environment also required
-							purposeful feature-branching and version control with GitHub.
-						</p>
-						<p>• Agile • Git • Java • TDD • OOP •</p>
-					</article>
-					<img src="" alt="Smart Garage">
-					<article>
-						<h3>Smart Garage</h3>
-						<p>
-							First solo project utilizing basic object oriented programing skills.
-							Used test driven development to build out multiple classes for various
-							car types, provided each class with unique methods, and created a garage
-							class to house all car objects. Wrote a console application to interact
-							with the various classes, both individually and in groups.
-						</p>
-						<p>• Java • TDD • OOP •</p>
-					</article>
-				</div>
+		<section class="projects">
+			<h2 class="projects__header">Projects</h2>
+			<div class="projects--grid-layout">
+				<article class="project-container">
+					<img class="project-container__image" src="images/portfolio-website.PNG" alt="Portfolio Website">
+					<h3 class="project-container__header">Portfolio Website</h3>
+					<p class="project-container__summary">
+						Week-long solo project to master the basics of HTML5 and CSS3. Filler - summary to come soon.
+						Filler - summary to come soon. Filler - summary to come soon. Filler - summary to come soon.
+						Filler - summary to come soon. Filler - summary to come soon. Filler - summary to come soon.
+						Filler - summary to come soon. Filler - summary to come soon. Filler - summary to come soon.
+					</p>
+					<p class="project-container__footer">
+						HTML5 | CSS3 | Flexbox | Grid |
+						<a href="https://github.com/madlaw10/madlaw10.github.io" target="_blank">
+							<img src="images/GitHub-Mark-32px.png" alt="Portfolio Website GitHub">
+						</a>
+					</p>
+				</article>
+				<article class="project-container">
+					<img class="project-container__image" src="images/hospital.PNG" alt="Hospital Management">
+					<h3 class="project-container__header">Hospital Management</h3>
+					<p class="project-container__summary">
+						Solo project to showcase the skills mastered in the first four weeks of
+						the bootcamp. There was a heavy emphasis on OOP and, by extension, APIE to
+						design a mock hospital management system. When compared to my first solo
+						project, Smart Garage, this code shows my growth and confidence as a developer
+						in just a few weeks.
+					</p>
+					<p class="project-container__footer">
+						Java | TDD | OOP & APIE | Git |
+						<a href="https://github.com/madlaw10/high-street-hospital" target="_blank">
+							<img src="images/GitHub-Mark-32px.png" alt="Hospital Management GitHub">
+						</a>
+					</p>
+				</article>
+				<article class="project-container">
+					<img class="project-container__image" src="images/virtual-pet.PNG" alt="Virtual Pet Shelter">
+					<h3 class="project-container__header">Virtual Pet Shelter</h3>
+					<p class="project-container__summary">
+						Used the principles of agile development to create a virtual pet shelter game
+						with a team of fellow junior developers. The three-week long project was divided
+						into multiple three-day sprints, with designated time for sprint retrospection
+						and planning sessions. The team environment also required purposeful feature-branching
+						and version control with GitHub.
+					</p>
+					<p class="project-container__footer">
+						Agile | Git | Java | TDD | OOP |
+						<a href="https://github.com/madlaw10/virtual-pet" target="_blank">
+							<img src="images/GitHub-Mark-32px.png" alt="Virtual Pet Shelter GitHub">
+						</a>
+					</p>
+				</article>
+				<article class="project-container">
+					<img class="project-container__image" src="images/smart-garage.PNG" alt="Smart Garage">
+					<h3 class="project-container__header">Smart Garage</h3>
+					<p class="project-container__summary">
+						First solo project utilizing basic object oriented programing skills.
+						Used test driven development to build out multiple classes for various
+						car types, provided each class with unique methods, and created a garage
+						class to house all car objects. Wrote a console application to interact
+						with the various classes, both individually and in groups.
+					</p>
+					<p class="project-container__footer">
+						Java | TDD | OOP |
+						<a href="https://github.com/madlaw10/smart-garage" target="_blank">
+							<img src="images/GitHub-Mark-32px.png" alt="Smart Garage GitHub">
+						</a>
+					</p>
+				</article>
 			</div>
+			<!--projects grid-->
 		</section>
-
-		<footer id="contact-info">
-			<section>
-				<p>614.668.5843</p>
-				<p>madison.e.lawton@gmail.com</p>
-				<p>1518 Kenny Road, Apt 8, Columbus, OH 43212</p>
-			</section>
-			<section>
-				<a>GitHub</a>
-				<a>LinkedIn</a>
-			</section>
-		</footer>
+		<!--projects container-->
 	</main>
 </body>
-
-</html>
