@@ -10,9 +10,22 @@
 }
 
 html {
-	background-color:#fbfffe;
+	background-color:#ffffff;
 	font:16px/1.618 Arial, sans-serif;
-	color: #211a1d;
+	color: #000000;
+}
+
+.about-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.text-container {
+	margin-top: .5rem;
+	margin-bottom: 2rem;
+	width: 468px;
+	text-align:justify;
 }
 
 .projects {
@@ -21,16 +34,20 @@ html {
 	align-items: center;
 }
 
-.projects__header {
-	background-color: #1b998b;
+.section-header {
+	background-color: #ACD8AA;
 	border-radius: 10px;
 	width: 500px;
-	text-align: center;
+	text-indent: 1rem
 }
 
 @media screen and (min-width: 1100px) {
-	.projects__header {
+	.section-header {
 		width: 1032px;
+	}
+
+	.text-container {
+		width: 1000px;
 	}
 
 	.projects--grid-layout {
@@ -40,8 +57,12 @@ html {
 }
 
 @media screen and (min-width: 2100px) {
-	.projects__header {
+	.section-header {
 		width: 2096px;
+	}
+
+	.text-container {
+		width: 2064px;
 	}
 
 	.projects--grid-layout {
@@ -51,7 +72,7 @@ html {
 }
 
 .project-container {
-	background-color: #1b998b;
+	background-color: #ACD8AA;
 	margin: 1rem;
 	border-radius: 10px; 
  	width: 500px;
@@ -69,7 +90,7 @@ html {
 }
 
 .project-container__header {
-	margin: 0 auto;
+	text-indent: 1rem;
 }
 
 .project-container__summary {
@@ -86,11 +107,20 @@ html {
 }
 
 .main-footer {
-	background-color: #211a1d;
-	color: #fbfffe;
+	background-color: #000000;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.main-footer a {
+	text-decoration: none;
 }
 
 .professional-link__icon {
 	width: 32px;
 	height: 32px;
+	margin: .5rem;
 }

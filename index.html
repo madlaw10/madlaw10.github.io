@@ -12,21 +12,25 @@
 
 <body>
 	<main>
-		<section>
-			<h3>About Me</h3>
-			<p>
-				I am a junior software developer (in-training) living in Columbus, OH.
-			</p>
-
-			<h3>Tech Stack</h3>
-			<p>
-				Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile
-				(Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
-				Structured Query Language (SQL) • Relational Databases • Source Control / Git
-			</p>
+		<section class="about-section">
+			<h2 class="section-header">About Me</h2>
+			<div class="text-container">
+				<p>
+					I am a junior software developer (in-training) living in Columbus, OH.
+				</p>
+			</div>
+			<h2 class="section-header">Tech Stack</h2>
+			<div class="text-container">
+				<p>
+					Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile 
+					• Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive Design /
+					Mobile • Structured Query Language • Relational Databases • Source Control / Git
+				</p>
+			</div>
 		</section>
+		<!--about section container-->
 		<section class="projects">
-			<h2 class="projects__header">Projects</h2>
+			<h2 class="section-header">Projects</h2>
 			<div class="projects--grid-layout">
 				<article class="project-container">
 					<img class="project-container__image" src="images/portfolio-website.PNG" alt="Portfolio Website">
@@ -48,8 +52,8 @@
 					<img class="project-container__image" src="images/hospital.PNG" alt="Hospital Management">
 					<h3 class="project-container__header">Hospital Management</h3>
 					<p class="project-container__summary">
-						Solo project to showcase the skills mastered in the first four weeks of
-						the bootcamp. There was a heavy emphasis on OOP and, by extension, APIE to
+						Solo project to showcase the skills mastered in the first four weeks of a
+						coding bootcamp. There was a heavy emphasis on OOP and, by extension, APIE to
 						design a mock hospital management system. When compared to my first solo
 						project, Smart Garage, this code shows my growth and confidence as a developer
 						in just a few weeks.
@@ -102,7 +106,6 @@
 	</main>
 	<footer class="main-footer">
 		<section class="contact-information">
-			<p>614.668.5843</p>
 			<p>madison.e.lawton@gmail.com</p>
 			<p>1518 Kenny Road, Apt 8, Columbus, OH 43212</p>
 		</section>
@@ -110,11 +113,11 @@
 			<a href="mailto:madison.e.lawton@gmail.com" target=_blank>
 				<img class="professional-link__icon" src="images/footer-icon--email.png" alt="Email">
 			</a>
-			<a href="https://github.com/madlaw10" target="_blank">
-				<img class="professional-link__icon" src="images/footer-icon--github.png" alt="GitHub">
-			</a>
 			<a href="https://www.linkedin.com/in/madisonlawton/" target="_blank">
 				<img class="professional-link__icon" src="images/footer-icon--linkedin.png" alt="LinkedIn">
+			</a>
+			<a href="https://github.com/madlaw10" target="_blank">
+				<img class="professional-link__icon" src="images/footer-icon--github.png" alt="GitHub">
 			</a>
 		</section>
 	</footer>
