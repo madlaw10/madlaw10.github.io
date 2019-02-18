@@ -93,6 +93,7 @@ html {
 .project-container__summary {
 	margin: 1rem;
 	margin-top: 0;
+	height: 300px;
 	text-align: justify;
 }
 
