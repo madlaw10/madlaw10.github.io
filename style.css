@@ -1,7 +1,3 @@
-/*comments*/
-/*flexbox = 1-dimensional alignment*/
-/*grid = 2-dimensional alignment*/
-/*BEM = block, element, modifier*/
 
 * {
 	box-sizing:border-box;
@@ -43,7 +39,8 @@ html {
 }
 
 .main-header__nav__link {
-	text-decoration: none;
+	color: #000000;
+	text-decoration-line: none;
 }
 
 .personal-photo__collage {
@@ -141,6 +138,7 @@ html {
 	}
 
 	.main-header__nav {
+		margin: 0;
 		padding-right: 1rem;
 	}
 
