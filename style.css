@@ -21,6 +21,36 @@ html {
 	align-items: center;
 }
 
+.main-header {
+	background-color: #ACD8AA;
+	border-radius: 10px;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	margin-top: .5rem;
+	margin-bottom: 1rem;
+	padding-bottom: .5rem;
+	position: fixed;
+}
+
+.main-header__title {
+	text-indent: 1rem;
+}
+
+.main-header__nav {
+	margin-top: -.5rem;
+	text-indent: 1rem;
+}
+
+.main-header__nav__link {
+	text-decoration: none;
+}
+
+.personal-photo__collage {
+	padding-top: 6rem;
+	width: 500px;
+}
+
 .section-header {
 	background-color: #ACD8AA;
 	border-radius: 10px;
@@ -101,6 +131,24 @@ html {
 }
 
 @media screen and (min-width: 1100px) {
+	.main-header {
+		width: 1032px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0;
+		position: fixed;
+	}
+
+	.main-header__nav {
+		padding-right: 1rem;
+	}
+
+	.personal-photo__collage {
+		padding-top: 4rem;
+		width: 1032px;
+	}
+
 	.section-header {
 		width: 1032px;
 	}
@@ -128,20 +176,5 @@ html {
 		width: 32px;
 		height: 32px;
 		margin: .5rem;
-	}
-}
-
-@media screen and (min-width: 2100px) {
-	.section-header {
-		width: 2096px;
-	}
-
-	.text-container {
-		width: 2064px;
-	}
-
-	.projects--grid-layout {
-		display: flex;
-		grid-template-columns: repeat(4,1fr);
 	}
 }
