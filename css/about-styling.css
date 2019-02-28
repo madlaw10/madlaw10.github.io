@@ -10,23 +10,89 @@
 
 
 body {
-	background-color: #097b51;
-	background-image: url(../images/green_one.jpg);
+	background-color: #32502c;
+	background-image: url(../images/green_two.jpg);
 	background-size: 100vw;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: rgba(0,0,0,.5);
+}
+
+.nav-link {
+    margin-left: 1rem;
 }
 
 main {
+    margin-top: .5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-	height: 95vh;
+}
+
+img {
+    width:75%;
+    border-radius: 50px 50px 50px 50px;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.professional-links {
+    margin-bottom: 1rem;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+}
+
+.professional-link{
+    font-size: 1rem;
+    margin: .25rem;
+    padding: .25rem 1rem;
+    background-color: rgba(0,0,0,.25);
+}
+
+.content {
+    display: none;
 }
 
 .photo-source {
 	margin: .25rem;
 	padding: .25rem 1rem;
 	background-color: rgba(0,0,0,.25);
+}
+
+@media screen and (min-width: 500px) {
+    .professional-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+       width: 500px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+    
+    .content {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
 }
