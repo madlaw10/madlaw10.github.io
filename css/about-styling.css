@@ -8,10 +8,13 @@
 	text-decoration: none;
 }
 body {
-	background-color: #03593C;
+	background-color: #097b51;
 	background-image: url(../images/green_two.jpg);
 	background-size: 100vw;
     background-repeat: no-repeat;
+}
+header {
+    position: relative;
 }
 nav {
     display: none;

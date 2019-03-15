@@ -1,6 +1,7 @@
 .hamburger-menu{
-	display: inline-block;
-	margin: 10px;
+    display: inline-block;
+    margin-top: 10px;
+	margin-left: 10px;
 }
 .bar {
 	width: 35px;
@@ -20,8 +21,25 @@
 	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-8px, -7px);
 }
+.hamburger-menu__nav {
+    border: 5px solid #ffffff;
+    margin-left: 10px;
+    padding: 10px;
+    padding-bottom: 5px;
+    list-style: none;
+    position: absolute;
+}
+.hamburger-menu__nav li {
+    margin-bottom: 5px;
+}
+.hide {
+    display: none;
+}
 @media screen and (min-width: 500px) {
     .hamburger-menu {
 		display: none;
+    }
+    .hamburger-menu__nav {
+        display: none;
     }
 }
