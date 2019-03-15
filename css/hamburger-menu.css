@@ -1,0 +1,27 @@
+.hamburger-menu{
+	display: inline-block;
+	margin: 10px;
+}
+.bar {
+	width: 35px;
+	height: 5px;
+	background-color: #FFFFFF;
+	margin: 5px;
+	transition: .4s;
+}
+.cross .bar-one {
+	-webkit-transform: rotate(-45deg) translate(8px, 8px);
+	transform: rotate(-45deg) translate(-8px, 4px);
+}
+.cross .bar-two {
+	opacity: 0;
+}
+.cross .bar-three {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -7px);
+}
+@media screen and (min-width: 500px) {
+    .hamburger-menu {
+		display: none;
+    }
+}
