@@ -1,0 +1,45 @@
+.image-carousel {
+    display: none;
+}
+@media screen and (min-width: 500px) {
+    .image-carousel {
+        display: block;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+    .image-carousel__buttons {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+    }
+    .image-carousel__button__left,
+    .image-carousel__button__right {
+        background-color: rgba(0,0,0,.5);
+        color: #ffffff;
+        padding: 5px;
+    }
+    .image-carousel__cards {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease;
+    }
+    .image-carousel__card {
+        min-width: 400px;
+        min-height: 400px;
+        display: inline-block;
+    }
+    img {
+        width: 400px;
+    }
+}

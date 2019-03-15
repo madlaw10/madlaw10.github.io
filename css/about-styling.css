@@ -27,7 +27,7 @@ main {
 	align-items: center;
 	width: 100vw;
 }
-img {
+.single-photo {
     width:75%;
     border-radius: 50%;
 }
@@ -76,12 +76,12 @@ footer {
     .nav-link {
         margin-left: 1rem;
     }
+    .single-photo {
+        display: none;
+    }
     .professional-links {
         display: flex;
         flex-direction: row;
-    }
-    img {
-       width: 500px;
     }
     h1 {
         font-size: 4rem;

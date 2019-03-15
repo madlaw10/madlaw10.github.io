@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/about-styling.css">
     <link rel="stylesheet" type="text/css" href="css/hamburger-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/image-carousel.css">
     <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
 
@@ -25,13 +26,25 @@
         </ul>
         <nav>
             <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About</a>
             <a class="nav-link" href="projects.html">Projects</a>
             <a class="nav-link" href="https://resume.creddle.io/resume/7ceyyvqdww2">Resume</a>
         </nav>
     </header>
     <main>
-        <img src="images/personal-photo.jpg" alt="Madison Lawton">
+        <div class="image-carousel">
+            <ul class="image-carousel__cards" data-target="image-carousel__cards">
+                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/personal-photo.jpg" alt="Madison Lawton"></li>
+                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/billy-and-me.jpg" alt="Madison and Billy Lawton"></li>
+                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/cats-on-a-stool.jpg" alt="Nietzsche and Joe"></li>
+                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/burger-time.jpg" alt="Burger Time"></li>
+                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/grand-canyon.jpg" alt="Grand Canyon"></li>
+            </ul>
+            <div class="image-carousel__buttons">
+                <button class="image-carousel__button__left" data-action="slideLeft">&lt</button>
+                <button class="image-carousel__button__right" data-action="slideRight">&gt</button>
+            </div>
+        </div>
+        <img class="single-photo" src="images/personal-photo.jpg" alt="Madison Lawton">
         <h1>
             Hi, I'm Madison!
         </h1>
@@ -64,6 +77,7 @@
         </span>
     </footer>
     <script src="./js/hamburger-menu.js"></script>
+    <script src="./js/image-carousel.js"></script>
 </body>
 
 </html>
