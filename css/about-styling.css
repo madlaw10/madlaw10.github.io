@@ -7,23 +7,15 @@
 	color: #FFFFFF;
 	text-decoration: none;
 }
-
-
 body {
 	background-color: #03593C;
 	background-image: url(../images/green_two.jpg);
 	background-size: 100vw;
     background-repeat: no-repeat;
 }
-
-header {
-    background-color: rgba(0,0,0,.5);
+nav {
+    display: none;
 }
-
-.nav-link {
-    margin-left: 1rem;
-}
-
 main {
     margin-top: .5rem;
 	display: flex;
@@ -32,17 +24,14 @@ main {
 	align-items: center;
 	width: 100vw;
 }
-
 img {
     width:75%;
     border-radius: 50%;
 }
-
 h1 {
 	font-size: 2rem;
 	text-align: center;
 }
-
 .professional-links {
     margin-bottom: 1rem;
     display: grid;
@@ -50,7 +39,6 @@ h1 {
 	justify-content: center;
     align-items: center;
 }
-
 .professional-link{
     font-size: 1rem;
     text-align: center;
@@ -58,46 +46,46 @@ h1 {
     padding: .25rem 1rem;
     background-color: rgba(0,0,0,.25);
 }
-
 .alt-content {
     width: 60%;
     margin-bottom: 1rem;
     text-align: center;
 }
-
 .content {
     display: none;
 }
-
 footer {
     position: absolute;
     bottom: 0;
 }
-
 .photo-source {
 	margin-left: .25rem;
 	padding: .25rem;
 	background-color: rgba(0,0,0,.25);
 }
-
 @media screen and (min-width: 500px) {
+    header {
+        background-color: rgba(0,0,0,.5);
+    }
+    nav {
+        display: flex;
+    }
+    .nav-link {
+        margin-left: 1rem;
+    }
     .professional-links {
         display: flex;
         flex-direction: row;
     }
-
     img {
        width: 500px;
     }
-
     h1 {
         font-size: 4rem;
     }
-
     .alt-content {
         display: none;
     }
-    
     .content {
         width: 500px;
         display: flex;
@@ -106,12 +94,10 @@ footer {
         align-items: center;
         margin-bottom: 1rem;
     }
-    
     p {
         margin-bottom: 1rem;
         text-align: justify;
     }
-
     footer {
         bottom: 0;
         position: fixed;
