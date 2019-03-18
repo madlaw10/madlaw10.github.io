@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/about-styling.css">
     <link rel="stylesheet" type="text/css" href="css/hamburger-menu.css">
     <link rel="stylesheet" type="text/css" href="css/image-carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/drop-down.css">
     <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
 
@@ -33,11 +34,16 @@
     <main>
         <div class="image-carousel">
             <ul class="image-carousel__cards" data-target="image-carousel__cards">
-                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/personal-photo.jpg" alt="Madison Lawton"></li>
-                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/billy-and-me.jpg" alt="Madison and Billy Lawton"></li>
-                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/cats-on-a-stool.jpg" alt="Nietzsche and Joe"></li>
-                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/burger-time.jpg" alt="Burger Time"></li>
-                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/grand-canyon.jpg" alt="Grand Canyon"></li>
+                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/personal-photo.jpg"
+                        alt="Madison Lawton"></li>
+                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/billy-and-me.jpg"
+                        alt="Madison and Billy Lawton"></li>
+                <li class="image-carousel__card" data-target="image-carousel__card"><img
+                        src="images/cats-on-a-stool.jpg" alt="Nietzsche and Joe"></li>
+                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/burger-time.jpg"
+                        alt="Burger Time"></li>
+                <li class="image-carousel__card" data-target="image-carousel__card"><img src="images/grand-canyon.jpg"
+                        alt="Grand Canyon"></li>
             </ul>
             <div class="image-carousel__buttons">
                 <button class="image-carousel__button__left" data-action="slideLeft">&lt</button>
@@ -46,7 +52,7 @@
         </div>
         <img class="single-photo" src="images/personal-photo.jpg" alt="Madison Lawton">
         <h1>
-            Hi, I'm Madison!
+            Hi, I'm <span class="toggle-button">Madison</span>!
         </h1>
         <p class="alt-content">I am a junior full-stack developer living in Columbus, OH.</p>
         <section class="professional-links">
@@ -55,19 +61,21 @@
             <a class="professional-link" href="https://github.com/madlaw10" target="_blank">GitHub</a>
             <a class="professional-link" href="https://resume.creddle.io/resume/7ceyyvqdww2" target="_blank">Resume</a>
         </section>
-        <section class="content">
-            <p>I am a junior full-stack developer living in Columbus, OH. I'm
-                passionate about designing back-end solutions, sustainability
-                and community action. When not in front of a computer screen, I'm
-                backpacking, playing board games, or hanging out in craft breweries.
-            </p>
-            <h2>Skills</h2>
-            <p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 •
-                Flexbox • Grid • Test Driven Development • Agile • Object Oriented
-                Programming • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
-                Structured Query Language • Relational Databases • Source Control / Git
-            </p>
-        </section>
+        <div class="toggle-content hide">
+            <section class="content">
+                <p>I am a junior full-stack developer living in Columbus, OH. I'm
+                    passionate about designing back-end solutions, sustainability
+                    and community action. When not in front of a computer screen, I'm
+                    backpacking, playing board games, or hanging out in craft breweries.
+                </p>
+                <h2>Skills</h2>
+                <p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 •
+                    Flexbox • Grid • Test Driven Development • Agile • Object Oriented
+                    Programming • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
+                    Structured Query Language • Relational Databases • Source Control / Git
+                </p>
+            </section>
+        </div>
     </main>
     <footer>
         <span class="photo-source">Photo by
@@ -78,6 +86,7 @@
     </footer>
     <script src="./js/hamburger-menu.js"></script>
     <script src="./js/image-carousel.js"></script>
+    <script src="./js/drop-down.js"></script>
 </body>
 
 </html>
