@@ -38,6 +38,9 @@ main {
 .project__image {
 	z-index: 10;
 	margin: 0 auto;
+	/* top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
 	width: 75%;
 	position: fixed;
 }
