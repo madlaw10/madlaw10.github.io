@@ -12,7 +12,6 @@ body {
 	background-image: url(../images/green_one.jpg);
 	background-size: 100vw;
 	background-repeat: no-repeat;
-	z-index: -10;
 }
 header {
 	position: relative;

@@ -1,0 +1,8 @@
+@media screen and (min-width: 500px) {
+    .toggle-button {
+        text-decoration-line: underline;
+    }
+    .hide {
+        display: none;
+    }
+}

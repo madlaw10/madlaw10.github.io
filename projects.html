@@ -1,14 +1,142 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Madison Lawton</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/projects-styling.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburger-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
+
 <body>
-    
+    <header>
+        <div class="hamburger-menu">
+            <div class="bar bar-one"></div>
+            <div class="bar bar-two"></div>
+            <div class="bar bar-three"></div>
+        </div>
+        <ul class="hamburger-menu__nav hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://resume.creddle.io/resume/7ceyyvqdww2">Resume</a></li>
+        </ul>
+        <nav>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="https://resume.creddle.io/resume/7ceyyvqdww2">Resume</a>
+        </nav>
+    </header>
+
+    <main >
+
+        <div class="projects">
+
+            <article class="project">
+                <img class="project__image modal" src="images/portfolio-website.png" alt="Screenshot">
+                <div class="project__header">
+                    <h3 class="project__title">Portfolio Website</h3>
+                    <a href="https://github.com/madlaw10/madlaw10.github.io" target="_blank">
+                        <img src="images/project-icon--github.png" alt="Portfolio Website GitHub">
+                    </a>
+                </div>
+                    <p class="project__summary">
+                        Two week-long solo projects to master the basics of HTML5, CSS3 and Javascript,
+                        including responsive design elements. The website currently highlights my bootcamp
+                        projects, but can be easily updated as my portfolio grows.
+                    </p>
+                    <p class="project__footer">
+                        HTML5 | CSS3 | Flexbox | Grid | Javascript
+                    </p>
+            </article>
+
+            <article class="project">
+                <img class="project__image modal" src="images/blog-website.png" alt="Screenshot">
+                <div class="project__header">
+                    <h3 class="project__title">Blog Website</h3>
+                    <a href="https://github.com/madlaw10/blog-site" target="_blank">
+                        <img src="images/project-icon--github.png" alt="Blog Website GitHub">
+                    </a>
+                </div>
+                    <p class="project__summary">
+                        Used pair programming to create a web application to write and modify blog posts.
+                        My partner and I drove out nearly all of of our code using TDD and kept the overall
+                        application and design simple.
+                    </p>
+                    <p class="project__footer">
+                        Java | TDD | JPA | H2 | HTML5 | CSS3 | Thymeleaf | GitHub
+                    </p>
+            </article>
+
+            <article class="project">
+                <img class="project__image modal" src="images/user-review-website.png" alt="Screenshot">
+                <div class="project__header">
+                    <h3 class="project__title">User Review Website</h3>
+                    <a href="https://github.com/madlaw10/user-review-site" target="_blank">
+                        <img src="images/project-icon--github.png" alt="User Review Website GitHub">
+                    </a>
+                </div>
+                    <p class="project__summary">
+                        Created a web application to review various life-experiences, from mundane to thrilling.
+                        As an agile team of junior developers, we utilized purposeful feature-branching and
+                        source control via GitHub.
+                    </p>
+                    <p class="project__footer">
+                        Java | JPA | H2 | HTML5 | CSS3 | Thymeleaf | Agile | GitHub
+                    </p>
+            </article>
+
+            <!-- <article class="project">
+                <img class="project__image modal" src="images/hospital-management.png" alt="Screenshot">
+                <div class="project__header">
+                    <h3 class="project__title">Hospital Management</h3>
+                    <a href="https://github.com/madlaw10/high-street-hospital" target="_blank">
+                        <img src="images/project-icon--github.png" alt="Hospital Management GitHub">
+                    </a>
+                </div>
+                <p class="project__summary">
+                    Quick solo project to showcase the skills mastered in the first four weeks of my
+                    coding bootcamp. There was a heavy emphasis on OOP and, by extension, APIE to
+                    design a mock hospital management console application.
+                </p>
+                <p class="project__footer">
+                    Java | TDD | OOP & APIE
+                </p>
+            </article> -->
+
+            <article class="project">
+                <img class="project__image modal" src="images/virtual-pet-shelter.png" alt="Screenshot">
+                <div class="project__header">
+                    <h3 class="project__title">Virtual Pet Shelter</h3>
+                    <a href="https://github.com/madlaw10/virtual-pet" target="_blank">
+                        <img src="images/project-icon--github.png" alt="Virtual Pet Shelter GitHub">
+                    </a>
+                </div>
+                <p class="project__summary">
+                    Used the principles of agile development to create a virtual pet shelter console
+                    application game with a team of four junior developers. The multi-week project was
+                    split into three-day sprints, with designated time for planning and retrospection.
+                </p>
+                <p class="project__footer">
+                    Agile | GitHub | Java | TDD | OOP
+                </p>
+            </article>
+
+        </div>
+        <!--projects grid-->
+    </main>
+    <footer>
+        <span class="photo-source">Photo by
+            <a href="https://www.pexels.com/@adrian-mohammad-487852?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+                target="_blank">Adrian Mohammad</a> from
+            <a href="https://www.pexels.com/photo/frond-green-leaves-plant-1198004/" target="_blank">Pexels</a>
+        </span>
+    </footer>
+    <script src="./js/hamburger-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
+
 </html>
