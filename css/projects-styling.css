@@ -10,6 +10,7 @@
 body {
 	background-color: #097b51;
 	background-image: url(../images/green_three.jpg);
+	background-attachment: fixed;
 	background-size: 100vw;
     background-repeat: no-repeat;
 }
@@ -38,10 +39,6 @@ main {
 .project__image {
 	z-index: 10;
 	margin: 0 auto;
-	/* try a max-width media query
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%); */
 	width: 75%;
 	position: fixed;
 }
@@ -68,7 +65,7 @@ footer {
 }
 @media screen and (min-width: 500px) {
     header {
-		position: relative;
+		position: fixed;
         background-color: rgba(0,0,0,.5);
     }
     nav {
