@@ -7,40 +7,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/index-styling.css">
-    <link rel="stylesheet" type="text/css" href="css/hamburger-menu.css">
-    <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
 
 <body>
-    <header>
-        <div class="hamburger-menu">
-            <div class="bar bar-one"></div>
-            <div class="bar bar-two"></div>
-            <div class="bar bar-three"></div>
-        </div>
-        <ul class="hamburger-menu__nav hide">
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="https://resume.creddle.io/resume/7ceyyvqdww2">Resume</a></li>
-        </ul>
-    </header>
     <main>
-        <h1>MADISON LAWTON</h1>
-        <nav>
-            <a class="nav__links" href="about.html">ABOUT</a>
-            <a class="nav__links" href="projects.html">PROJECTS</a>
-            <a class="nav__links" href="https://resume.creddle.io/resume/7ceyyvqdww2">RESUME</a>
-        </nav>
+        <div class="home">
+            <h1>
+                MADISON LAWTON
+            </h1>
+            <nav>
+                <a class="nav-links" href="#about">ABOUT</a>
+                <a class="nav-links" href="#projects">PROJECTS</a>
+                <a class="nav-links" href="https://resume.creddle.io/resume/7ceyyvqdww2">RESUME</a>
+            </nav>
+        </div>
+        <div class="about" id="about">
+            <div class="about-photo">
+                <img src="./images/grand-canyon.jpg"/>
+            </div>
+            <div class="about-text">
+                <h1>
+                    Hi, I'm Madison!
+                </h1>
+                <div class="about-links">
+                    <a class="about-link" href="mailto:madison.e.lawton@gmail.com" target=_blank>Email</a>
+                    <a class="about-link" href="https://www.linkedin.com/in/madisonlawton/" target="_blank">LinkedIn</a>
+                    <a class="about-link" href="https://github.com/madlaw10" target="_blank">GitHub</a>
+                    <a class="about-link" href="https://resume.creddle.io/resume/7ceyyvqdww2" target="_blank">Resume</a>
+                </div>
+                <p class="about-aboutMe">
+                    I am a junior full-stack developer living in Columbus, OH. I'm
+                    passionate about designing simple back-end solutions and compassionate coding,
+                    as well as promoting sustainability and community action. When not in front
+                    of a computer screen, I'm backpacking, playing board games, or hanging out in
+                    craft breweries.
+                </p>
+                <h2>
+                    Skills
+                </h2>
+                <p class="about-skills">
+                    Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 •
+                    Flexbox • Grid • Test Driven Development • Agile • Object Oriented
+                    Programming • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
+                    Structured Query Language • Relational Databases • Source Control / Git
+                </p>
+            </div>
+        </div>
     </main>
-    <footer>
-        <span class="photo-source">Photo by
-            <a href="https://www.pexels.com/@studio-7042-215243?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
-                target="_blank">Studio 7042</a> from
-            <a href="https://www.pexels.com/photo/shallow-focus-photography-of-green-fern-1141792/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
-                target="_blank">Pexels</a>
-        </span>
-    </footer>
-    <script src="./js/hamburger-menu.js"></script>
 </body>
-
-</html>
